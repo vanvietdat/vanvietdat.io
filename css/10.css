@@ -1,0 +1,145 @@
+
+#myresume {
+	background-color: #3bf550;
+	text-align: center;
+	padding: 40px 80px 40px 80px;
+	margin: 0;
+}
+
+nav {
+	background-color: #a9e8b2;
+	text-align: center;
+	overflow: hidden;
+
+}
+
+nav a {
+	color: #026b10;
+	padding: 10px 40px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+}
+
+nav a:hover {
+	background-color: #02a32f;
+	color: black;
+}
+
+#left_side {
+	flex: 30%;
+	background-color: #adcbf0;
+	padding: 10px 20px;
+}
+
+#right_side {
+	flex: 70%;
+	background-color: #9abfed;
+	padding: 10px 20px;
+
+}
+
+#flex_container {
+	display: flex;
+	flex-wrap: nowrap;	
+}
+
+#footer {
+	background-color: #606061;
+	padding: 80px 20px;
+	color: white;
+	text-align: center;
+
+}
+
+footer a {
+	color: white;
+	text-align: center;
+
+}
+
+table {
+	border-style: solid;
+}
+
+/* styling the table */
+table { 
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.course_item {
+	/*width: 33%;
+	float: left;*/
+	text-align: center;
+	flex: 33%;
+}
+
+.course_img {
+	width: 90%;
+}
+
+#course_container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.course_title {
+	font-size: 150%;
+	font-weight: bold;
+	padding: 10px 10px 5px 10px;
+}
+
+.course_desc {
+	margin: 0px 10px 20px 10px;
+}
+
+@media(max-width: 800px){
+  
+ 	#left_side { 100%;
+	}
+	#right_side { 100%;
+	}
+	#flex_container {
+	display: flex;
+	flex-wrap: wrap;	}
+
+	.course_item {
+	/*width: 50%;
+	float: left;*/
+	flex: 50%;
+	text-align: center;}
+}
+
+@media(max-width: 400px){
+  
+ 	#left_side { 100%;
+	}
+	#right_side { 100%;
+	}
+	#flex_container {
+	display: flex;
+	flex-wrap: wrap;}
+	.course_item {
+	flex: 100%;
+	float: left;
+	text-align: center;}
+}
